@@ -1,0 +1,6 @@
+aws ssm create-document \
+  --name runbook name \
+  --content file://content.yaml \
+  --document-format YAML \
+  --attachments Key=AttachmentReference,Values="runbook arn/runbook version number/file name" \
+  --document-type Automation
